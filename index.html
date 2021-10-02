@@ -39,7 +39,7 @@
            <dt>По нескольким классам</dt>
            <dd>
                <p>
-                .MainButton.NewPage {<br>
+                .Bot.Text {<br>
                 color: brown; <br>
                } <br>
                Стили будут применяться ко всем элементам, которые одновременно имеют и класс MainButton и класс NewPage
@@ -50,5 +50,27 @@
     <a href="#"class="octopus">Ссылка по классу octopus</a>
     <h3 class="octopus">Заголовок по классу octopus</h3>
     <button id="MainButton">По ID MainButton</button>
+    <p class="Text">class Text Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit optio eveniet praesentium ad perspiciatis vero soluta ducimus itaque ut culpa quas, officia temporibus dicta doloribus officiis numquam, nobis nam sapiente.</p>
+    <p class="Bot">Class Bot Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium similique accusantium nesciunt pariatur veritatis soluta amet aut, cumque vel debitis quod nostrum rem esse dolorum quam architecto consequuntur ipsa ex?</p>
+    <p> <b>Содержит оба класса  Text Bot</b></p>
+    
+    <p class="Text Bot">class Bot и Text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam eos nesciunt voluptatibus itaque accusamus dolorem repudiandae molestiae eligendi iste quam? Consequatur recusandae facere ut vero pariatur. Ipsum incidunt rem quibusdam?</p>
+    <p>Ссылка вложена в параграф и имеет класс link. Цвет ссылки будет красный так как Спецефичность двух селекторов одинакова, но применятся по последовательности их записи в файле style</style></p>
+    <p class="Text">Lorem ipsum dolor sit <a href="#" class="link">facebook.com</a> adipisicing elit. Commodi officia sit nam quam molestiae nemo ex, dignissimos accusantium vel sapiente ad rem velit delectus consequuntur similique rerum, cumque inventore officiis.</p>
+    <p>Список класса link получит цвет red, но ссылка с ID=Mainlink  имеет Специфичность выше, чем .link</p>
+    <ul class="link">
+        <li>Lorem ipsum dolor sit <a href="#" id="MainLink">Youtube.com</a> amet consectetur adipisicing elit. Adipisci nemo optio, sequi explicabo in totam maiores assumenda? Impedit odit suscipit a unde, deleniti pariatur reprehenderit enim exercitationem, modi culpa corrupti.</li>
+        <li>
+            <p class="BigText">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet tempore ratione dolor aliquid minus distinctio, aspernatur itaque sit incidunt ad dicta quia, similique fugit. Voluptatum eius laboriosam at? Repellat, soluta?
+            </p>
+        </li>    
+        <li>
+            <p class="BigText Bot">
+              Lorem ipsum, <a href="#" class="octopus">green_LINK</a> dolor sit amet consectetur adipisicing elit. Nesciunt debitis iusto deleniti cupiditate assumenda consectetur dolorem, officiis error perferendis dolorum numquam, ipsum nisi doloremque excepturi sapiente? Nemo deleniti cumque mollitia?
+            </p>
+        </li>
+    </ul>
+
 </body>
 </html>

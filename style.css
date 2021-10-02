@@ -7,3 +7,22 @@ h2{
 #MainButton{
     color: blue;
 }
+.Text{
+    color: chartreuse;
+}
+.Bot{
+    color: cyan;
+}
+.Bot.Text{
+    color: darkmagenta;
+    font-style: italic;
+}
+.link{
+    color: red;
+}
+#MainLink{
+    color:indigo;
+}
+.BigText{
+    font-size: 30px;
+}
