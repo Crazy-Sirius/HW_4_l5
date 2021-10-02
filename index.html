@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Виды селекторов</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Селекторы</h1>
+    <dl>
+        <dt>По тегам</dt>
+         <dd><p>
+             h2 {<br>
+            color: red;<br>
+            } <br>
+        Применится к заголовку h1 и изменит его цвет на красный
+        </p>
+        </dd>
+        <dt>По классам</dt>
+         <dd>
+             <p>
+             .octopus {<br>
+              color: green; <br>
+             } <br>
+             Применится ко всем объектам, у которых class = octopus
+             </p>
+          </dd>
+          <dt>По ID</dt>
+          <dd>
+              <p>
+              #MainButton {<br>
+               color: blue; <br>
+              } <br>
+              Применится к единственному элементу, ID которого  MainButton
+              </p>
+           </dd>
+           <dt>По нескольким классам</dt>
+           <dd>
+               <p>
+                .MainButton.NewPage {<br>
+                color: brown; <br>
+               } <br>
+               Стили будут применяться ко всем элементам, которые одновременно имеют и класс MainButton и класс NewPage
+               </p>
+            </dd>
+    </dl>
+    <h2>Заголовок по Тегу</h2>
+    <a href="#"class="octopus">Ссылка по классу octopus</a>
+    <h3 class="octopus">Заголовок по классу octopus</h3>
+    <button id="MainButton">По ID MainButton</button>
 </body>
 </html>
